@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "vite build;cp assets/Andrew_Thresher_Resume.pdf dist/assets/;cp 404.html dist/",
+    "serve": "vite preview",
+    "deploy": "npm run build;firebase deploy --only hosting"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
